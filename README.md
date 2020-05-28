@@ -7,10 +7,11 @@
 * _Get comfortable using ActiveRecord._
 
 ## User Stories
-* _As an HR manager, I want to be able to create divisions in the company (HR, IT, Sales, etc)._
-* _As an HR manager, I want to be able to list, update, and delete divisions._
-* _As an HR manager, I want to be able to add employees and assign them to a division. An employee will belong to one division and a division will have many employees._
-* _As an HR manager, I want to be able to choose an individual division and see its employees_
+* _As an HR manager, I want to be able to create divisions in the company (HR, IT, Sales, etc)._ √
+* _As an HR manager, I want to be able to list, update, and delete divisions._ √ 
+* _As an HR manager, I want to be able to add employees and assign them to a division. An employee will belong to one division and a division will have many employees._ √
+* _As an HR manager, I want to be able to choose an individual division and see its employees_ √
+
 * _As a project manager, I want to be able to add projects._
 * _As a project manager, I want to be able to list the current projects._
 * _As a project manager, I want to be able to assign projects to an employee when I am looking at the employee page._
