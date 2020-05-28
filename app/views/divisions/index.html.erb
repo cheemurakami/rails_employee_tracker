@@ -1,0 +1,14 @@
+<h1>Epicodus company</h1>
+  <% if @divisions.any? %>
+    <h4>Our divisions</h4>
+      <ul>
+        <% @divisions.each do |division| %>
+          <li><%= link_to division.name, division_path(division) %></li>
+        <% end %>
+      </ul>
+  <% else %>
+    <h4>There are no divisions yet.</h4>
+  <% end %>
+
+
+<p><%= link_to "Create a new division", new_division_path %></p>
