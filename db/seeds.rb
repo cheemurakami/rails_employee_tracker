@@ -9,7 +9,7 @@
 Division.destroy_all
 Employee.destroy_all
 
-5.times do |index|
+5.times do 
   division = Division.create!(name: Faker::Job.field)
   10.times do
     Employee.create!(name: Faker::TvShows::FamilyGuy.character, division: division)

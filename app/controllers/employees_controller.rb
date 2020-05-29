@@ -29,6 +29,7 @@ class EmployeesController < ApplicationController
 
   def update
     @employee = Employee.find(params[:id])
+
     if @employee.update(employee_params)
       redirect_to division_path(@employee.division)
     else
@@ -44,7 +45,7 @@ class EmployeesController < ApplicationController
 
   private
     def employee_params
-      params.require(:employee).permit(:name)
+      params.require(:employee).permit(:name, project_ids: [])
     end
 
 end
