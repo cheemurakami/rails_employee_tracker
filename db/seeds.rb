@@ -7,45 +7,15 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Division.destroy_all
+Employee.destroy_all
 
-10.times do |index|
-# |division_index|
-
-  Division.create!(name: Faker::Job.field)
-
-  # 2.times do
-  #   project = Projects.new (name: Faker::Job.chord)
-  #   project.save
-  # end
-
-  # (project_index + 1).times do 
-  #   offset = rand(Project.count)
-  #   project = Project.offset(offset).first
-
-  #   if employee.divisions.inlcude? division
-  #   else 
-  #     employee.divisions << division
-
-  #   end 
-  #  end 
-  # end 
+5.times do |index|
+  division = Division.create!(name: Faker::Job.field)
+  10.times do
+    Employee.create!(name: Faker::TvShows::FamilyGuy.character, division: division)
+  end
  end 
 
-
- 
-
- p "Created#{Division.count} divisions"
-
-
-# Division.destroy_all
-
-# 10.times do |division|
-#   division = Division.create!(name: Faker::Company.industry)
-  
-#   15.times do |employee|
-#     Employee.create!(name: Faker::TvShows::StarTrek.character, division_id: division.id)
-#   end
-
-# end
-
-# p "created #{Division.count} divisions, and #{Employee.count} employees "
+ 5.times do 
+  Project.create!(name: Faker::Job.field)
+ end
